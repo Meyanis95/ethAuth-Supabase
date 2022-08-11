@@ -2,13 +2,31 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+Fisrt, run:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
 ```
+
+Make sure to have your Supabase database setted up, and to complete your .env file as env.example:
+
+```bash
+SUPABASE_SECRET_KEY=
+NEXT_PUBLIC_SUPABASE_PUBLIC_URL=
+SUPABASE_JWT_SECRET=
+NEXT_PUBLIC_SUPABASE_ANON_KEY=
+```
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
