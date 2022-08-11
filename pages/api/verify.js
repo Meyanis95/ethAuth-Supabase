@@ -8,7 +8,7 @@ const verify = async (req, res) => {
     // Retrieving the user address that signed the message
     const signerAddr = ethers.utils.verifyMessage(nonce, signature)
 
-    // If the signature does not match with the address owner we throw an error
+    // If the signature does not match with the owner address we throw an error
     if (signerAddr !== ethAddress) {
       throw new Error ("wrong_signature")
     } 
